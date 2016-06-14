@@ -33,7 +33,12 @@ SENSOR_MAPPINGS = dict(
 			'rot_rate_x': v[0],
 			'rot_rate_y': v[1],
 			'rot_rate_z': v[2]
-			}
+			},
+	magnetic_field=lambda v: {
+			'mag_x': v[0],
+			'mag_y': v[1],
+			'mag_z': v[2]
+			},
 	)
 
 def map_from_android(event):
